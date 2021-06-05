@@ -3,4 +3,7 @@
 <%= render 'form', friend: @friend %>
 
 <%= link_to 'Show', @friend, class:"btn btn-dark my-4" %>
+
+<%= link_to 'Destroy', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+
 <%= link_to 'Back', friends_path, class:"btn btn-dark my-4" %>

@@ -7,7 +7,8 @@
     <li class="list-group-item"><%= @friend.email %></li>
   </ul>
   <div class="card-body">
-    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-secondary" %> 
-    <%= link_to 'Back', friends_path, class:"btn btn-secondary" %>
+    <%= link_to 'Edit', edit_friend_path(@friend), class:"btn btn-dark" %> 
+    <%= link_to 'Destroy', @friend, method: :delete, data: { confirm: 'Are you sure?' }, class:"btn btn-danger" %>
+    <%= link_to 'Back', friends_path, class:"btn btn-dark" %>
   </div>
 </div>
