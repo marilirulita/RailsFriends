@@ -4,20 +4,6 @@ Hello, this is Mar Bautista and I study in Microverse
 
 This is my ruby on rails Friends List App
 
-* Ruby version
+* you can click here to see the app in heroku:
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* [Friends App](https://railsfriendsmar.herokuapp.com/)
