@@ -1,23 +1,28 @@
+<% if user_signed_in? %>
 <table class="table table-hover mt-3">
   <thead class="table-dark">
     <tr>
       <th>Name</th>
       <th>Phone</th>
       <th>Email</th>
+      <th>User id</th>
       <th colspan="3"></th>
     </tr>
   </thead>
 
   <tbody>
     <% @friends.each do |friend| %>
+      <% if friend.user == current_user %>
       <tr>
         <td><%= friend.name %></td>
         <td><%= friend.phone %></td>
         <td><%= friend.email %></td>
+        <td><%= friend.user.email %></td>
         <td><%= link_to 'Show', friend %></td>
         <td><%= link_to 'Edit', edit_friend_path(friend) %></td>
         <td><%= link_to 'Destroy', friend, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
+      <% end %>
     <% end %>
   </tbody>
 </table>
@@ -25,3 +30,13 @@
 <br>
 
 <%= link_to 'New Friend', new_friend_path, class:"btn btn-secondary" %>
+
+<% else %>
+
+<div class="container mt-3">
+<div class="alert alert-secondary" role="alert">
+  <h2>You need to sign in to see your friends list :D ! </h2>
+</div>
+</div>
+
+<% end %>
