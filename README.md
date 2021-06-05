@@ -1,9 +1,8 @@
-# README
+# Friends App
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Hello, this is Mar Bautista and I study in Microverse
 
-Things you may want to cover:
+This is my ruby on rails Friends List App
 
 * Ruby version
 
